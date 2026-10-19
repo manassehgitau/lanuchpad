@@ -22,6 +22,11 @@ header nav a:hover{
 
 .title {
     color: var(--color-brand);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    text-align: center;
 }
 
 #subtitle {
