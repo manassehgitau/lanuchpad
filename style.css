@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonts: "Roboto", sans-serif;
+    --color-brand: #18ad4e;
+    --color-alternate: hsl(211, 41%, 15%); /* use hex here */
+    --color-text: #000000;
+}
+
+body{
+    font-family: var(--fonts);
+}
+
+header nav a{
+    color: var(--color-brand);
+    text-decoration: none;
+}
+
+header nav a:hover{
+    color: var(--color-alternate);
+}
+
+.title {
+    color: var(--color-brand);
+}
+
+#subtitle {
+    color: var(--color-alternate);
+}
+
+.tagline{
+    color: var(--color-text);
+}
