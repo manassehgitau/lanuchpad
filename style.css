@@ -14,7 +14,7 @@
 }
 
 body{
-    font-family: var(--fonts);
+    font-family: var(--fonts) !important;
 }
 
 header nav a{
@@ -59,6 +59,7 @@ header nav a:hover{
     padding: 15px 40px 20px 5px;
 
     /* add the margin properties */
+    
     /* margin-top: 30px;
     margin-bottom: 50px;
     margin-left: 40px;
@@ -72,4 +73,32 @@ header nav a:hover{
     padding:16px 10px;
 
     margin: 20px 18px;
+}
+
+h1 { color: gray !important; }
+h1 { color: black; }   /* wins — same specificity, later in the file */
+
+
+.intro{
+    position: relative;
+    top: 30px;
+    bottom: 40px;
+    /* left: 50px; */
+    /* right: 80px; */
+}
+
+/* .banner{
+    position: fixed;
+    top: 20px;
+    z-index: 10;
+} */
+
+header{
+    position: relative;
+}
+
+.banner{
+    position: sticky;
+    top: 65px;
+    z-index: 10;
 }
