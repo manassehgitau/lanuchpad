@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 :root{
     --fonts: "Roboto", sans-serif;
     --color-brand: #18ad4e;
@@ -24,8 +30,6 @@ header nav a:hover{
     color: var(--color-brand);
     font-size: 2.5rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    line-height: 20px;
     text-align: center;
 }
 
@@ -35,4 +39,37 @@ header nav a:hover{
 
 .tagline{
     color: var(--color-text);
+}
+
+.title{
+    /* border: 2px;
+    border-style: dotted; */
+
+    border: 2px double var(--color-text);
+    border-radius: 5px;
+
+    /* padding: 10px;
+    margin: 30px; */
+
+    /* padding-bottom: 20px;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 40px; */
+
+    padding: 15px 40px 20px 5px;
+
+    /* add the margin properties */
+    /* margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    margin-right: 20px; */
+
+    margin: 30px 20px 50px 40px;
+}
+
+.tagline{
+    border: 2px solid var(--color-brand);
+    padding:16px 10px;
+
+    margin: 20px 18px;
 }
