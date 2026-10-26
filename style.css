@@ -75,10 +75,6 @@ header nav a:hover{
     margin: 20px 18px;
 }
 
-h1 { color: gray !important; }
-h1 { color: black; }   /* wins — same specificity, later in the file */
-
-
 .intro{
     position: relative;
     top: 30px;
@@ -101,4 +97,26 @@ header{
     position: sticky;
     top: 65px;
     z-index: 10;
+}
+
+/* for small devices */
+@media (min-width: 0px){
+    .title{
+        color: var(--color-alternate);
+    }
+}
+
+
+/* for medium devices */
+@media (min-width: 640px){
+    .title{
+        color: var(--color-brand);
+    }
+}
+
+/* for large devices */
+@media (min-width: 1100px){
+    .title{
+        color: red;
+    }
 }
