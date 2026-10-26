@@ -1,86 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-:root{
-    --fonts: "Roboto", sans-serif;
-    --color-brand: #18ad4e;
-    --color-alternate: hsl(211, 41%, 15%); /* use hex here */
-    --color-text: #000000;
+:root {
+  --fonts: "Roboto", sans-serif;
+  --color-brand: #18ad4e;
+  --color-alternate: hsl(211, 41%, 15%); /* use hex here */
+  --color-text: #000000;
 }
 
-body{
-    font-family: var(--fonts) !important;
+body {
+  font-family: var(--fonts) !important;
 }
 
-header nav a{
-    color: var(--color-brand);
-    text-decoration: none;
+header a {
+  text-decoration: none;
 }
 
-header nav a:hover{
-    color: var(--color-alternate);
+header a p {
+  color: var(--color-brand);
+  font-size: 20px;
+}
+
+header a p:hover {
+  color: var(--color-alternate);
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+header nav a {
+  color: var(--color-brand);
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: var(--color-alternate);
+}
+
+header div button {
+  background-color: var(--color-brand);
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 4px;
 }
 
 .title {
-    color: var(--color-brand);
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    text-align: center;
+  color: var(--color-brand);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 #subtitle {
-    color: var(--color-alternate);
+  color: var(--color-alternate);
 }
 
-.tagline{
-    color: var(--color-text);
+.tagline {
+  color: var(--color-text);
 }
 
-.title{
-    /* border: 2px;
+.title {
+  /* border: 2px;
     border-style: dotted; */
 
-    border: 2px double var(--color-text);
-    border-radius: 5px;
+  border: 2px double var(--color-text);
+  border-radius: 5px;
 
-    /* padding: 10px;
+  /* padding: 10px;
     margin: 30px; */
 
-    /* padding-bottom: 20px;
+  /* padding-bottom: 20px;
     padding-top: 15px;
     padding-left: 5px;
     padding-right: 40px; */
 
-    padding: 15px 40px 20px 5px;
+  padding: 15px 40px 20px 5px;
 
-    /* add the margin properties */
-    
-    /* margin-top: 30px;
+  /* add the margin properties */
+
+  /* margin-top: 30px;
     margin-bottom: 50px;
     margin-left: 40px;
     margin-right: 20px; */
 
-    margin: 30px 20px 50px 40px;
+  margin: 30px 20px 50px 40px;
 }
 
-.tagline{
-    border: 2px solid var(--color-brand);
-    padding:16px 10px;
+.tagline {
+  border: 2px solid var(--color-brand);
+  padding: 16px 10px;
 
-    margin: 20px 18px;
+  margin: 20px 18px;
 }
 
-.intro{
-    position: relative;
-    top: 30px;
-    bottom: 40px;
-    /* left: 50px; */
-    /* right: 80px; */
+.intro {
+  position: relative;
+  top: 30px;
+  bottom: 40px;
+  /* left: 50px; */
+  /* right: 80px; */
 }
 
 /* .banner{
@@ -89,34 +117,67 @@ header nav a:hover{
     z-index: 10;
 } */
 
-header{
-    position: relative;
+header {
+  position: relative;
 }
 
-.banner{
-    position: sticky;
-    top: 65px;
-    z-index: 10;
+.banner {
+  position: sticky;
+  top: 65px;
+  z-index: 10;
 }
 
 /* for small devices */
-@media (min-width: 0px){
-    .title{
-        color: var(--color-alternate);
-    }
+@media (min-width: 0px) {
+  .title {
+    color: var(--color-alternate);
+  }
+
+  header nav {
+    display: none;
+  }
+  header div {
+    display: none;
+  }
 }
 
-
 /* for medium devices */
-@media (min-width: 640px){
-    .title{
-        color: var(--color-brand);
-    }
+@media (min-width: 640px) {
+  .title {
+    color: var(--color-brand);
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 30px;
+    padding: 4px 10px;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  header div {
+    display: block;
+  }
+
+  header div button {
+    background-color: var(--color-brand);
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+  }
 }
 
 /* for large devices */
-@media (min-width: 1100px){
-    .title{
-        color: red;
-    }
+@media (min-width: 1100px) {
+  .title {
+    color: red;
+  }
 }
