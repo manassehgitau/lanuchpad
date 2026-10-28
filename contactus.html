@@ -1,43 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tembea Kenya | Contact Us</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    <header class="flex flex-row justify-between items-center px-3 py-4">
-        <a href="#">
-            <p class="text-red-400 hover:text-red-800 text-xl">Tembea Kenya</p>
-        </a>
-        <nav class="flex justify-center items-center gap-3">
+  </head>
+  <body>
+    <header
+      class="relative flex flex-row justify-between items-center px-3 py-4"
+    >
+      <a href="#">
+        <p class="text-red-400 hover:text-red-800 text-xl">Tembea Kenya</p>
+      </a>
+      <nav class="hidden md:block flex justify-center items-center gap-3">
+        <a href="#" class="hover:text-red-500">Home</a>
+        <a href="#" class="hover:text-red-500">Discover</a>
+        <a href="#" class="hover:text-red-500">About Us</a>
+        <a href="#" class="hover:text-red-500">Contact Us</a>
+      </nav>
+
+      <div class="hidden md:block flex justify-center items-center gap-3">
+        <button
+          class="px-3 py-1 border border-red-400 rounded-xl hover:bg-red-50 hover:border-red-300"
+        >
+          Login
+        </button>
+        <button
+          class="px-3 py-2 bg-red-400 text-white rounded-xl hover:bg-red-500"
+        >
+          Register
+        </button>
+      </div>
+
+      <div class="relative md:hidden">
+        <input id="mobile-menu" type="checkbox" class="peer sr-only" />
+        <label
+          for="mobile-menu"
+          class="block cursor-pointer rounded p-2 hover:bg-red-50 focus-within:ring-2 focus-within:ring-red-400"
+          aria-label="Toggle navigation menu"
+        >
+          <img src="./images/icons/menu.svg" alt="" class="h-6 w-6" />
+        </label>
+
+        <div
+          class="absolute right-0 top-full z-10 hidden w-52 flex-col gap-4 rounded-lg bg-white p-4 shadow-lg peer-checked:flex"
+        >
+          <nav class="flex flex-col justify-start items-start gap-3">
             <a href="#" class="hover:text-red-500">Home</a>
             <a href="#" class="hover:text-red-500">Discover</a>
             <a href="#" class="hover:text-red-500">About Us</a>
             <a href="#" class="hover:text-red-500">Contact Us</a>
-        </nav>
+          </nav>
 
-        <div class="flex justify-center items-center gap-3">
-            <button class="px-3 py-1 border border-red-400 rounded-xl hover:bg-red-50 hover:border-red-300">Login</button>
-            <button class="px-3 py-2 bg-red-400 text-white rounded-xl hover:bg-red-500">Register</button>
+          <div class="flex flex-wrap justify-start items-center gap-3">
+            <button
+              class="px-3 py-1 border border-red-400 rounded-xl hover:bg-red-50 hover:border-red-300"
+            >
+              Login
+            </button>
+            <button
+              class="px-3 py-2 bg-red-400 text-white rounded-xl hover:bg-red-500"
+            >
+              Register
+            </button>
+          </div>
         </div>
+      </div>
     </header>
     <main>
-        <section class="grid grid-cols-3 grid-rows-3 gap-3 justify-center items-center p-10 ">
-            <img src="./images/zebra.png" alt="An image of a zebra in the wild" class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105">
-            <img src="./images/zebra.png" alt="An image of a zebra in the wild" class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105">
-            <img src="./images/zebra.png" alt="An image of a zebra in the wild" class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105">
+      <section
+        class="grid grid-col2-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-3 gap-3 justify-center items-center p-10"
+      >
+        <img
+          src="./images/zebra.png"
+          alt="An image of a zebra in the wild"
+          class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105"
+        />
+        <img
+          src="./images/zebra.png"
+          alt="An image of a zebra in the wild"
+          class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105"
+        />
+        <img
+          src="./images/zebra.png"
+          alt="An image of a zebra in the wild"
+          class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105"
+        />
 
-            <img src="./images/rhino.png" alt="An image of a rhino running" class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105">
-            <img src="./images/rhino.png" alt="An image of a rhino running" class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105">
-            <img src="./images/rhino.png" alt="An image of a rhino running" class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105">
+        <img
+          src="./images/rhino.png"
+          alt="An image of a rhino running"
+          class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105"
+        />
+        <img
+          src="./images/rhino.png"
+          alt="An image of a rhino running"
+          class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105"
+        />
+        <img
+          src="./images/rhino.png"
+          alt="An image of a rhino running"
+          class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105"
+        />
 
-            <img src="./images/giraffe.png" alt="An image of a giraffe with its child" class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105">
-            <img src="./images/giraffe.png" alt="An image of a giraffe with its child" class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105">
-            <img src="./images/giraffe.png" alt="An image of a giraffe with its child" class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105">
-        </section>
+        <img
+          src="./images/giraffe.png"
+          alt="An image of a giraffe with its child"
+          class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105"
+        />
+        <img
+          src="./images/giraffe.png"
+          alt="An image of a giraffe with its child"
+          class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105"
+        />
+        <img
+          src="./images/giraffe.png"
+          alt="An image of a giraffe with its child"
+          class="w-[500px] h-[500px] object-cover transition duration-100 ease-in-out hover:scale-105"
+        />
+      </section>
     </main>
-    
-</body>
+  </body>
 </html>
