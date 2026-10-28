@@ -5,21 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header>
-        <a href="#"><p>Nexa Academy</p></a>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-        </nav>
-        <div>
-            <button>Login In</button>
-            <button>Register</button>
-        </div>
-    </header>
+    <header
+      class="relative flex flex-row justify-between items-center px-3 py-4"
+    >
+      <a href="./index.html">
+        <p class="text-red-400 hover:text-red-800 text-xl">Tembea Kenya</p>
+      </a>
+      <nav class="hidden md:block flex justify-center items-center gap-3">
+        <a href="./index.html" class="hover:text-red-500">Home</a>
+        <a href="#" class="hover:text-red-500">Discover</a>
+        <a href="./about.html" class="hover:text-red-500">About Us</a>
+        <a href="./contactus.html" class="hover:text-red-500">Contact Us</a>
+      </nav>
 
+      <div class="hidden md:block flex justify-center items-center gap-3">
+        <button
+          class="px-3 py-1 border border-red-400 rounded-xl hover:bg-red-50 hover:border-red-300"
+        >
+          Login
+        </button>
+        <button
+          class="px-3 py-2 bg-red-400 text-white rounded-xl hover:bg-red-500"
+        >
+          Register
+        </button>
+      </div>
+
+      <div class="relative md:hidden">
+        <input id="mobile-menu" type="checkbox" class="peer sr-only" />
+        <label
+          for="mobile-menu"
+          class="block cursor-pointer rounded p-2 hover:bg-red-50 focus-within:ring-2 focus-within:ring-red-400"
+          aria-label="Toggle navigation menu"
+        >
+          <img src="./images/icons/menu.svg" alt="" class="h-6 w-6" />
+        </label>
+
+        <div
+          class="absolute right-0 top-full z-10 hidden w-52 flex-col gap-4 rounded-lg bg-white p-4 shadow-lg peer-checked:flex"
+        >
+          <nav class="flex flex-col justify-start items-start gap-3">
+            <a href="#" class="hover:text-red-500">Home</a>
+            <a href="#" class="hover:text-red-500">Discover</a>
+            <a href="#" class="hover:text-red-500">About Us</a>
+            <a href="#" class="hover:text-red-500">Contact Us</a>
+          </nav>
+
+          <div class="flex flex-wrap justify-start items-center gap-3">
+            <button
+              class="px-3 py-1 border border-red-400 rounded-xl hover:bg-red-50 hover:border-red-300"
+            >
+              Login
+            </button>
+            <button
+              class="px-3 py-2 bg-red-400 text-white rounded-xl hover:bg-red-500"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
     <h1 class="title">Manasseh Gitau</h1>
     <p id="subtitle">I love programming</p>
     <p class="tagline">I love writing code in HTML, CSS and Javascript</p> <!--This is CSS added alongside a HTML tag -->
