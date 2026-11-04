@@ -128,3 +128,73 @@ console.log(false && false);
 console.log(true || true);
 console.log(true || false);
 console.log(false || false);
+
+
+let hour = 19; // the current hour of the day
+console.log(hour);
+//  19
+if (hour < 12){ // its before mid-day
+    console.log("Good Morning");
+// 19
+} else if (hour < 18){ // midday - 6pm
+    console.log("Good Afternoon");
+}else{ // all other hours
+    console.log("Good Evening")
+}
+
+let region = "lake";
+
+switch (region) {
+    case "coast":
+        console.log("mombasa, malindi, kilfi")
+        break;
+    case "safari":
+        console.log('Amboseli, masai mara, nairobi national');
+        break;
+    case "lake":
+        console.log("kisumu, homabay, malaba");
+        break;
+    default:
+        console.log("I don't recognize this")
+        break;
+}
+
+let isActiveStudent = true;
+
+// long if/else statement
+// if (isActiveStudent){
+//     console.log('The student is active');
+// }else {
+//     console.log('The student is not active');
+// }
+
+// Ternary operation - minimized version of if/else statement
+isActiveStudent ? console.log('The student is active') : console.log('the student is not active');
+
+//  student1, student2 , .... , student10
+
+// for (intialization, coindtion, iterator){ operations}
+// sum from 1 , 10 = 1 + 2+ 3 +4 ... +10 intialization = 1 condtion ,intialization >= 10, intialization +1
+
+let totalOfSum = 0
+// for (let i = 1; i <= 10; i++){
+//     console.log(`number: ${i}`);
+//     totalOfSum += i; // totalOfSum = totalOfSum + 1
+//     console.log(`Current total of Sum: ${totalOfSum}`);
+// }
+
+// console.log(totalOfSum)
+
+//intro the in tial
+//while (condition){iterator}
+
+
+let i = 0;
+while (i <= 10){
+    console.log(`current Number: ${i}`)
+    totalOfSum += i;
+    console.log(`total of Sum: ${totalOfSum}`)
+    i++;
+}
+
+console.log(totalOfSum);
